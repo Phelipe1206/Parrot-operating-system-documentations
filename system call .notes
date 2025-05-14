@@ -1,0 +1,23 @@
+# system call overview
+
+System calls are the fundamental bridge between a user application and the operating system kernel. 
+They allow user-space programs to request services from the OS, such as accessing hardware, managing 
+memory, or handling processes. Common system calls include read(), write(), fork(), exec(), and 
+kill(). When a system call is made, the CPU switches to kernel mode, ensuring secure and privileged 
+execution of that operation. This provides a controlled environment where applications can safely 
+interact with system resources. In Linux-based OSes like Parrot, system calls are essential for building 
+and running any software that goes beyond basic computation, including device communication, 
+networking, and file I/O. Without them, applications wouldn’t be able to perform even the simplest.
+tasks. For system programmers and cybersecurity students, understanding how system calls operate 
+provides insight into how Linux works internally and is fundamental for debugging, optimization, and 
+even ethical hacking.
+# Introduction to kill() System Call
+The kill() system call is used to send signals to processes in a Linux-based system. Although its name 
+implies it is only used to terminate processes, it actually supports sending many types of signals (like 
+SIGTERM, SIGKILL, SIGSTOP, SIGCONT, etc.). The syntax is int kill(pid_t pid, int sig), 
+where pid is the process ID and sig is the signal to send. If the signal is SIGKILL, the target process is 
+terminated immediately without the chance to handle or block the signal. However, if SIGTERM is used, 
+the process may handle it with a custom cleanup routine. Parrot OS, being a Debian-based Linux distro, 
+fully supports this functionality. kill() is often used by system administrators and developers to stop, 
+pause, or continue processes based on system needs. The flexibility of sending different signals makes it 
+a powerful process management tool
